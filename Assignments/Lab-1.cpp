@@ -1,9 +1,4 @@
-// START 
-// This is the first assignment for my first year of college. 
-// Our professor asked us to exchange the values of two variables. 
-// For example, if X = 5 and Y = 10, the output should show Y = 5 and X = 10. 
-// As a first-year CS student with little prior coding experience, I was completely stuck on how to do this assignment. 
-// However, after research, with gemini(). This is it.
+
 #include <iostream>
 using namespace std; // so we dont have to keep repeating std::. that shi was exhausting.
 
@@ -30,6 +25,4 @@ int main() {
 
     return 0;
 }
-//Thanks. No one's reading.
-//update:: this is fvcking embarassing 0_0. 
 
