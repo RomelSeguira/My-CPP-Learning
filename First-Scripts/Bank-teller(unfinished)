@@ -1,0 +1,73 @@
+#include <iostream>
+#include <limits>
+using namespace std;
+
+
+// START
+// 
+/*int ReuseableErrorHandling(cin.fail())
+{
+if(cin.fail()){
+cin.clear();
+cin.ignore(numeric_limits<streamsize>::max(), '\n');
+else {
+cout << "Invalid Input.\n";
+}
+}*/
+
+
+
+int main() {
+int wallet = 1000;
+int deposit, currentBalance;
+int withdraw;
+int choice;
+do {
+cout << "Select \n1.) deposit\n2.) withdraw\n3.) view balance\n4.) Exit\n";
+while (choice != 1 || choice != 2 || choice != 3) {
+cout << "Enter input: ";
+cin >> choice;
+if (cin.fail()) {
+cout << "Invalid Input.\n";
+cin.clear();
+cin.ignore(numeric_limits<streamsize>::max(), '\n'); }
+else {
+break;
+}
+}
+
+
+
+switch(choice) {
+case 1:
+cout << "Please enter the amount to deposit.\nEnter input: ";
+cin >> deposit;
+currentBalance = wallet + deposit;
+cout << "You deposit "<< deposit<< " amount.\nYou have " << currentBalance<<" balance in your wallet.";
+break;
+case 2: 
+cout << "Please enter the amount to withdraw.\nEnter input: ";
+cin >> withdraw;
+currentBalance = wallet - withdraw;
+cout << "You withdraw " << withdraw << " amount.\nYou have " << currentBalance<<" balance in your wallet.";
+break;
+case 3:
+cout << "You Have a " << wallet << " in your wallet\n"; 
+break;
+case 4:
+cout << "Thankyou for using our program.";
+break;
+default:
+cout << "Please enter 1-4.\n";
+break;
+}
+}
+while (choice != 4);
+return 0;
+}
+
+//sorry spaghetti code 0_0
+//not done yet. 
+//I'm planning on creating error handling reusable code
+//but can't just get how i should do it.
+// maybe next tomorrow. I gonna pick idea on how should I do it.
