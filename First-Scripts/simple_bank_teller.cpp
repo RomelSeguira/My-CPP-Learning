@@ -1,9 +1,10 @@
 #include <iostream>
 #include <limits>
 using namespace std;
-This is completion of my simple bank teller project
-I completely change the structure from switch to if statement, because i got a lot of error in switch.
-
+//This is completion of my simple bank teller project
+//I completely change the structure from switch to if statement, because i got a lot of error in switch.
+//Next I'm planning to create a simple calculator, and Grade calculator as part of my three program proposal for final.
+//In my introduction to computer programming program.
 
 // START
 // 
