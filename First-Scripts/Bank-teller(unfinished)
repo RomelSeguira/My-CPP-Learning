@@ -66,8 +66,3 @@ while (choice != 4);
 return 0;
 }
 
-//sorry spaghetti code 0_0
-//not done yet. 
-//I'm planning on creating error handling reusable code
-//but can't just get how i should do it.
-// maybe next tomorrow. I gonna pick idea on how should I do it.
